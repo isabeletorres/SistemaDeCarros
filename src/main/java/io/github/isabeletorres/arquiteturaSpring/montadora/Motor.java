@@ -46,4 +46,15 @@ public class Motor {
     public void setCalavos(Integer calavos) {
         this.calavos = calavos;
     }
+
+    @Override
+    public String toString() {
+        return "Motor{" +
+                "modelo='" + modelo + '\'' +
+                ", calavos=" + calavos +
+                ", cilindros=" + cilindros +
+                ", litragem=" + litragem +
+                ", tipo=" + tipo +
+                '}';
+    }
 }
