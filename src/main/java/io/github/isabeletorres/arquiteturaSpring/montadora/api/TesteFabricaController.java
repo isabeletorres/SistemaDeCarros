@@ -1,19 +1,14 @@
 package io.github.isabeletorres.arquiteturaSpring.montadora.api;
-
 import io.github.isabeletorres.arquiteturaSpring.montadora.*;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.beans.factory.annotation.*;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/carros")
 public class TesteFabricaController {
 
     @Autowired
-    @Qualifier("motorEletrico")
+    @Qualifier("motorAspirado")
     private Motor motor;
 
     @PostMapping
